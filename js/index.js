@@ -38,7 +38,7 @@ function findOppositeNumber1() {
         return
     }
     if ( n1 % 2 != 0) {
-        alert('Số bạn nhập không phải là số chẵn')
+        alert('Số n bạn nhập không phải là số chẵn')
         return
     }
     if (n1 > 20 || n1 < 4) {
