@@ -4,16 +4,20 @@
     let inputNumber = document.getElementById("inputN").value
     inputNumber = parseInt(inputNumber)
     KQ = inputNumber + 10/2
+    // cho n = 10 
+    // cong thuc : KQ = inputNumber + n/2
     if (document.getElementById("inputN").value == ''){
         alert('Bạn chưa nhập số')
         return
     }
+    // if inputNumber > n -1 
     if (inputNumber > 9 || inputNumber < 0 ) {
         alert('Số bạn tìm nằm ngoài khoảng 0 đến 9')
         return
     }
     if (inputNumber >= 5 ){
         KQ = KQ - 10
+        //KQ = KQ - n
         document.getElementById("ketqua").innerHTML += KQ
     } else {
         KQ = KQ
