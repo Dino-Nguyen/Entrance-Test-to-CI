@@ -2,38 +2,46 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/index.css" rel="stylesheet">
     <title>Entrance Test to CI</title>
 </head>
 <body>
-<div>
+    <h1>Entrance Test to CI</h1>
+<div class="BaiA">
     <p>A.</p>
-<div>1.</div>
+<div class="bai1">1.
 Tìm số đối diện trong hình tròn ( từ 0 đến 9 )
 <img src ="img/unknown.png"/>
-<div >Số đối của <input id="inputN" type ="text" placeholder="Nhập số bạn muốn tìm"/> <button onclick="findOppositeNumber()" >Tìm</button>
-  <div class ="kqC"> là <div id="ketqua"></div></div></div>
-<div>2. Merge 2 chuỗi sau :
-    <div>Chuỗi 1 <input id="chuoi1" type="text" placeholder="Nhập chuỗi 1"/></div>
-    <div>Chuỗi 2 <input id ="chuoi2" type="text"  placeholder="Nhập chuỗi 2"/></div>
-    <div><button onclick="merge()">Merge</button></div>
-    <div id="ketqua2">Kết Quả : </div>
+<div >Số đối của <input id="inputN" type ="text" placeholder="Nhập số bạn muốn tìm"/> <button id="tim" onclick="findOppositeNumber()" >Tìm</button>
+  <div class ="kqC"> là <div id="ketqua"></div></div></div></div>
+<div class="bai2">2. Merge 2 chuỗi sau :
+    <div>Chuỗi 1: <input id="chuoi1" type="text" placeholder="Nhập chuỗi 1"/></div>
+    <div>Chuỗi 2: <input id ="chuoi2" type="text"  placeholder="Nhập chuỗi 2"/></div>
+    <div class="merCon"><button id="merge" onclick="merge()">Merge</button></div>
+    <div class="kqCon"> <u>Kết Quả :</u>
+    <div id="ketqua2"> </div></div>
 </div>
 </div>
-<div>
+<div class="BaiB">
     <p>B.</p>
     <div class="Con">
-    <h1>Lucky Number</h1>
-    <p>Dự đoán con số của bạn nằm trong khoảng từ 1 đến 10</p>
-    <input id="text3" type="text"/>
+    <h2>Lucky Number</h2>
+    <p class="tit1">Dự đoán con số của bạn nằm trong khoảng từ 1 đến 10</p>
+    <div  class="tit2">Bạn có <div id="luot">3</div>lượt quay</div>
+    <input id="text3" type="text" placeholder="Số bạn dự đoán"/>
     <button id="quay" onclick="mathRandom()">Quay</button>
     <div id="div1">Số của bạn nằm ngoài khoảng dự đoán</div>
+    <div id="div2">Bạn chưa nhập số</div>
+    <div id="div3"></div>
     <p>Kết Quả</p>
     <div id="ketqua3"></div>
 </div>
 </div>
+
+
 </body>
 
 

@@ -1,8 +1,33 @@
-.kqC {
-    
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Circular Std",sans-serif;
+}
+.BaiA {
+    border: 2px solid grey;
+    padding: 40px;
+}
+.bai1 {
  
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+#tim{
+    padding: 6px;
+    border-radius: 15px;
+    background-color: orange;
+    border: 2px solid rgb(187, 124, 8);
+    color: white;
+}
+#inputN{
+    padding: 5px;
+ 
+}
+.kqC {
     display : flex ;
-   
 }
 #ketqua {
     width: 40px;
@@ -16,28 +41,136 @@
 img {
     width : 200px;
 }
-h1{
+.bai2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#chuoi1, #chuoi2 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.merCon {
+    display: flex;
+    justify-content: center;
+}
+#merge {
+    color: white;
+    background-color: brown;
+    border: 2px solid rgb(128, 4, 4);
+    border-radius: 15px;
+    padding: 7px;
+    margin: 5px;
+}
+.kqCon {
+    display: flex;
+    margin-top: 5px;
+}
+#ketqua2 {
+    margin-left: 10px;
+}
+.BaiB {
+    border: 2px solid gray;
+    margin-top: 40px;
+    padding: 50px;
+}
+h2{
     color:white;
-    background-color: red;
+    background-color: rgb(255, 86, 86);
     width:300px;
     display:flex;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 .Con {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color:rgb(128, 243, 243) ;
     width: 300px;
-    height: 250px;
+    color :rgb(226, 87, 164);
+    font-weight: bolder;
+    
 }
-#div1{
+.tit1, .tit2{
+    width: 80%;  
+}
+.tit2{
+    display: flex;
+    justify-content: space-evenly;
+}
+#luot {
+    font-size: 30px;
+    position: relative;
+    top: -10px;
+    color:brown;
+}
+#text3 {
+    margin-bottom: 20px;
+    padding: 5px;
+}
+#div1, #div2{
     display:none
 }
+#quay{
+    margin-bottom:20px ;
+    font-size: 15px;
+    color: antiquewhite;
+    background-color: brown;
+    
+}
 #ketqua3 {
-    background-color: red;
+    background-color: rgb(51, 49, 167);
     color:white;
-  height:30px;
-    width:30px;
+  height:60px;
+    width:60px;
     display:flex;
     justify-content: center;
     align-items: center;
-
+ font-size: 30px;
+ border-radius: 25px;
+ margin-bottom: 20px;
 }
+
+@-webkit-keyframes xoay{
+    from {
+      -webkit-transform:rotate(0deg);
+      -moz-transform:rotate(0deg);
+      -o-transform:rotate(0deg);
+    }
+    to {
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -o-transform:rotate(360deg);
+    }
+  }
+  @keyframes xoay{
+    from {
+      -webkit-transform:rotate(0deg);
+      -moz-transform:rotate(0deg);
+      -o-transform:rotate(0deg);
+    }
+    to {
+      -webkit-transform:rotate(360deg);
+      -moz-transform:rotate(360deg);
+      -o-transform:rotate(360deg);
+    }
+  }
+  #quay {
+   
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  #quay:hover{
+    animation: xoay 2s linear 0s infinite;
+    -webkit-animation: xoay 2s linear 0s infinite;
+    -moz-animation: xoay 2s linear 0s infinite;
+    -o-animation: xoay 2s linear 0s infinite; 
+  }
+  #quay:active:after {
+    transition:2s;
+  }
