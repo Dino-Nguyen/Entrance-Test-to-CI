@@ -15,6 +15,7 @@
         alert('Số bạn tìm nằm ngoài khoảng 0 đến 9')
         return
     }
+    //if inputNumber >= n/2
     if (inputNumber >= 5 ){
         KQ = KQ - 10
         //KQ = KQ - n
@@ -22,6 +23,40 @@
     } else {
         KQ = KQ
         document.getElementById("ketqua").innerHTML += KQ
+    }
+   
+}
+function findOppositeNumber1() {
+  
+    let n1 = document.getElementById("n").value
+    n1 = parseInt(n1)
+    let x1 = document.getElementById("x").value
+    x1 = parseInt(x1)
+    KQ = x1 + n1/2
+    if (document.getElementById("n").value == '' || document.getElementById("x").value == ''  ){
+        alert('Bạn chưa nhập số')
+        return
+    }
+    if ( n1 % 2 != 0) {
+        alert('Số bạn nhập không phải là số chẵn')
+        return
+    }
+    if (n1 > 20 || n1 < 4) {
+        alert('Số bạn nhập nằm ngoài khoảng 4 - 20')
+        return
+    }
+    if (x1 > n1 - 1 || x1 < 0 ) {
+        alert('Số bạn tìm nằm ngoài khoảng tìm kiếm')
+        return
+    }
+    
+    if (x1 >= n1/2 ){
+        KQ = KQ - n1
+     
+        document.getElementById("y").innerHTML = KQ
+    } else {
+        KQ = KQ
+        document.getElementById("y").innerHTML = KQ
     }
    
 }
